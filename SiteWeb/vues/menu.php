@@ -7,7 +7,7 @@
         <a href="./?action=voirNews" >
             Actualit&eacute;
         </a>
-        <a href="./?action=sansAction">
+        <a href="./?action=voirPersonnages">
             Personnages
         </a>
     </div>

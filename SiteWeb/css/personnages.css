@@ -1,0 +1,26 @@
+.element
+{
+    background-color: #eee;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+td > img
+{
+    vertical-align: middle;
+    width: 200px;
+}
+
+td
+{
+    color: #333;
+    padding-right: 10px; 
+    padding-left: 10px;
+    text-align: justify;
+    font-family: Round4;
+}
+
+b
+{
+    font-family: Style;
+}

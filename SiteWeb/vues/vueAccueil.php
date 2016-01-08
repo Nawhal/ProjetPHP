@@ -27,16 +27,16 @@
 
         <div class="section articles">
             <?php
-                    NewsGateway::get3News();
-            for ($i = 1; $i <= 3; $i++) {
+                $tabnews = NewsGateway::get3News();
+            	foreach ($tabnews as $news) {
             ?>
                 <div class="articles_element">
                     <div class="articles_article">
                         <h3 class="centrer">
-                            <?php echo $dataVue[$i]->$titre;?>
+                            <?php echo $news->titre;?>
                         </h3>
                         <p>
-                            <?php echo $dataVue[$i]->$resume; ?>
+                            <?php echo $news->resume; ?>
                         </p>
                             <a href="./accueil.php" class="bouton-centre bouton">
                                 En savoir plus

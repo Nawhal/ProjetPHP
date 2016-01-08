@@ -1,24 +1,60 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 8 janv. 2016, 16:30:10
-    Author     : ceparis
+Bleu très très clair : #eef2f8;
+Bleu très clair : #dde5f1;
+Bleu clair: #7290c6;
+Bleu moyen: #4C72b6;
+Bleu foncé: #2b416a;
+Bleu très foncé: #131d2f;
 */
 
 body
 {
-    background: #111;
+    background-color: #4C72B6;
     font-family: Style, Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.5;
-    color: #333333;
+    color: #eee;
     margin-right: 20%;
     margin-bottom: 0px;
     margin-top: 0px;
     margin-left: 0px;
+}
+
+input[type=text]
+{
+    height: 34px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-sizing: content-box;
+}
+
+textarea
+{
+    height: 100px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-sizing: content-box;
+}
+
+.bonjour
+{
+    font-size: 20px;
 }
 
 aside
@@ -38,20 +74,10 @@ aside
     box-shadow: -8px 1px 0px rgba(0, 0, 0, 0.5);
 }
 
-aside > form > input[type="text"]
+aside > input[type="text"]
 {
     width: 85%;
     height: 34px;
-    padding: 5px 10px;
-    font-size: 14px;
-    color: #555555;
-    background-color: #ffffff;
-    background-image: none;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc;
-    border-radius: 10px;
-    margin-bottom: 10px;
 }
 
 aside > .bouton
@@ -75,83 +101,121 @@ aside > a
 aside > a:hover
 {
     color: #fff;
+    font-style: normal;
 }
 
 @font-face
 {
     font-family: Futur1;
-    src: url('../vue/Fonts/Aspace.otf') format('opentype');
+    src: url('./Fonts/Aspace.otf') format('opentype');
 }
 
 @font-face
 {
     font-family: Joli1;
-    src: url('../vue/Fonts/Chardons.ttf') format('truetype');
+    src: url('./Fonts/Chardons.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: Dalek;
-    src: url('../vue/Fonts/Dalek.ttf') format('truetype');
+    src: url('./Fonts/Dalek.ttf') format('truetype');
 }
 @font-face
 {
     font-family: Doctor;
-    src: url('../vue/Fonts/Doctor.ttf') format('truetype');
+    src: url('./Fonts/Doctor.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: Style;
-    src: url('../vue/Fonts/Dreams.ttf') format('truetype');
+    src: url('./Fonts/Dreams.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: Bande;
-    src: url('../vue/Fonts/Letter.ttf') format('truetype');
+    src: url('./Fonts/Letter.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: Futur2;
-    src: url('../vue/Fonts/Neuropol.ttf') format('truetype');
+    src: url('./Fonts/Neuropol.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: Soft1;
-    src: url('../vue/Fonts/Roboto.ttf') format('truetype');
+    src: url('./Fonts/Roboto.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: Soft2;
-    src: url('../vue/Fonts/Roboto2.ttf') format('truetype');
+    src: url('./Fonts/Roboto2.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: Soft3;
-    src: url('../vue/Fonts/Roboto3.ttf') format('truetype');
+    src: url('./Fonts/Roboto3.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: Soft4;
-    src: url('../vue/Fonts/Roboto4.ttf') format('truetype');
+    src: url('./Fonts/Roboto4.ttf') format('truetype');
 }
 
 @font-face
 {
+    font-family: Round1;
+    src: url('./Fonts/Round1.otf') format('opentype');
+}
+
+@font-face
+{
+    font-family: Round2;
+    src: url('./Fonts/Round2.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: Round3;
+    src: url('./Fonts/Round3.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: Round4;
+    src: url('./Fonts/Round4.otf') format('opentype');
+}
+
+@font-face
+{
+    font-family: Round4B;
+    src: url('./Fonts/Round4B.otf') format('opentype');
+}
+
+@font-face
+{
+    font-family: Round5;
+    src: url('./Fonts/Round5.ttf') format('truetype');
+}
+
+
+@font-face
+{
     font-family: Maj;
-    src: url('../vue/Fonts/Sorry.ttf') format('truetype');
+    src: url('./Fonts/Sorry.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: Joli2;
-    src: url('../vue/Fonts/Sunshine.ttf') format('truetype');
+    src: url('./Fonts/Sunshine.ttf') format('truetype');
 }
 
 h1, h2
@@ -168,13 +232,20 @@ h1
 
 h2
 {
-    font-size: 42px;
+    padding-top: 80px;
+    font-size: 60px;
     margin-bottom: 32px;
 }
 
 h3
 {
     font-size: 24px;
+}
+
+h4
+{
+    font-size: 15px;
+    margin-top: 0px;
 }
 
 p
@@ -191,17 +262,9 @@ p
     top: 0;
     z-index: 1030;
     background: #222;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 2%;
+    padding-right: 2%;
     margin-right: 0px;
-}
-@media (max-width: 991px)
-{
-    .menu
-    {
-        padding-left: 3%;
-        padding-right: 3%;
-    }
 }
 
 .menu_logo {
@@ -221,11 +284,17 @@ p
     text-decoration: none;
 }
 
+.menu_liens > a
+{
+    padding-left: 10px;
+}
+
 .menu > a:hover, .menu_liens > a:hover
 {
     color : #fafafa;
     text-decoration: none;
 }
+
 .menu_liens
 {
     float : right;
@@ -244,47 +313,6 @@ p
     border-top: 10px solid rgba(0,0,0,0.1);
 }
 
-.presentation
-{
-    padding-top: 130px;
-    padding-bottom: 120px;
-    color: #fff;
-    background-image: url('./Images/tardis.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #333;
-    width: 100%;
-}
-
-.presentation_sous-titre
-{
-    font-family: 'Style', 'Open Sans', sans-serif;;
-    font-weight: 700;
-}
-
-.articles
-{
-    background-color: #2b416a;
-    display: table;
-    padding: 40px 60px;
-}
-
-.articles_element
-{
-    display: table-cell;
-    width: 33.333333%;
-}
-
-.articles_article
-{
-    position: relative;
-    color: #333;
-    padding: 15px;
-    background: #eee;
-    border-radius: 5px;
-    margin: 15px;
-}
-
 .bouton
 {
     cursor : pointer;
@@ -295,7 +323,7 @@ p
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 24px;
-    padding: 8px 24px;
+    padding: 8px 0px;
     position: relative;
     text-align: center;
     width: 180px;
@@ -371,3 +399,13 @@ footer > p
     color : #a9302a;
 }
 
+.element
+{
+    margin: 0% 6% 0% 6%;
+    background-color: #dde5f1;;
+    color: #333;
+    margin-bottom: 32px;
+    padding: 2%;
+    border-radius: 10px;
+    font-weight: 600;
+}

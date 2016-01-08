@@ -1,7 +1,8 @@
 <?php
 
     $rootDirectory = dirname(__FILE__)."/";
-    $serverInfo = "http://localhost/~ceparis/SiteWeb/";
+    //$serverInfo = "http://localhost/~ceparis/SiteWeb/";
+    $serverInfo = "http://localhost//PHP_DoctorWho/SiteWeb/";
     require_once($rootDirectory.'/config/Autoload.php');
     require_once($rootDirectory.'/config/config.php');
     try

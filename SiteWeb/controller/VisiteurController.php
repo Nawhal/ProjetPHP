@@ -14,7 +14,6 @@
 class VisiteurController {
     
     public function __construct($action){
-
         switch($action){
                 case "sansAction":
                                 $this->SansAction();
@@ -24,6 +23,9 @@ class VisiteurController {
                                 break;
                 case "voirNews":
                                 $this->afficherNews();
+                                break;
+		case "voirPersonnages": 
+                                $this->voirPersonnages();
                                 break;
                 case "ajouterCommentaire": 
                                 $this->addCommentaire();
@@ -49,12 +51,19 @@ class VisiteurController {
     }
 
     public function afficherNews(){
-
-            echo "news";
+	    global $rootDirectory;
+            global $vues;
+            require($rootDirectory.$vues['vueActualites']);
     }
 
     public function addCommentaire(){
 
             echo "ajoutCommentaire";
+    }
+
+    public function voirPersonnages(){
+	    global $rootDirectory;
+            global $vues;
+            require($rootDirectory.$vues['vuePersonnages']);
     }
 }

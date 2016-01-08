@@ -16,4 +16,6 @@
 	$vues['erreur']='vues/erreur.php';
 	$vues['vuephp1']='vues/vuephp1.php';
         $vues['vueAccueil']='vues/vueAccueil.php';
+	$vues['vueActualites']='vues/vueActualites.php';
+	$vues['vuePersonnages']='vues/vuePersonnages.php';
 ?>

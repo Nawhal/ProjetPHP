@@ -1,0 +1,78 @@
+/* titre, d'un corps, d'une date de mise en ligne et peut comporter une image */
+
+article
+{
+    margin: 0% 5%;
+    background-color: #eee;
+    color: #333;
+    margin-bottom: 32px;
+    padding: 2%;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+article > h3
+{
+    padding: 5px 0px 10px 10px;
+  /*      up right down left */
+    margin: 0px;
+    font-family: Joli2;
+    font-size: 35px;
+}
+
+.date
+{
+    text-indent: 13px;
+    margin-top: -12px;
+    font-style: italic;
+}
+
+article > img
+{
+    margin : 0% 5% 3% 5%;
+    width: 90%;
+}
+
+article > p
+{
+    text-indent: 50px;
+    text-align:justify;
+}
+
+.commentaires
+{
+    font-family: Round4;
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /*display: none;*/
+}
+/*
+.article_affich:active > .commentaires
+{
+    display: block;
+}
+*/
+
+.article_affich
+{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+.element > input
+{
+    width: 200px;
+}
+
+.element > textarea
+{
+    width: 98%;
+    height: 100px;
+}
+
+.commentaire_element > h4
+{
+    font-family: Round4B;
+}

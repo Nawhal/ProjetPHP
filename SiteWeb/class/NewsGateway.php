@@ -12,6 +12,11 @@
  * @author ceparis
  */
 class NewsGateway {
+/*
+$server = 'mysql:host=hina;dbname=dbnasayarh';
+        $user = 'nasayarh';
+        $mdp = 'patate';
+*/
     
     public static function getAllNews()
     {
@@ -20,61 +25,52 @@ class NewsGateway {
         $mdp = 'patate';
 
         $connexion = new Connection($server, $user, $mdp, null);
-
-        /*$requete = "INSERT INTO News VALUES('Bonjour ceci est une news trop classe. Elle sert a rien mais c est pas très grave c est pour les tests. Salut la bise. Nawhal SayarH', '16/12/2015')";
-        $connexion->executeQuery($requete);*/
         $requete = "SELECT * FROM News";
         $connexion->executeQuery($requete);
-        return $connexion->getResults();
+	$result = $connexion->getResults();
+        foreach ($result as $row)
+        {	
+		$news = new News();
+                $news->index = $row['index'];
+                $news->titre = $row['titre'];
+                $news->date = $row['date'];
+                $news->pathImage = $row['pathImage'];
+                $news->resume = $row['resume'];
+                $news->contenu = $row['contenu'];
+		$tabnews[] = $news;
+		$compteur = $compteur-1;
+        }
+	return $tabnews;
     }
     
     public static function get3News()
     {
-        $server = 'mysql:host=hina;dbname=dbnasayarh';
-        $user = 'nasayarh';
-        $mdp = 'patate';
+        $server = 'mysql:host=localhost;dbname=sitePhpDW';
+        $user = 'root';
+        $mdp = 'cedre2510';
         
         $connexion = new Connection($server, $user, $mdp, null);
         $requete = "SELECT * FROM News ORDER BY DATE DESC";
         $connexion->executeQuery($requete);
         $result = $connexion->getResults();
         $compteur=3;
+	$tabnews = array();
         foreach ($result as $row)
-        {
-                echo "<h1>".$row['index']."</h1>\n<br/><br/>";
+        {	
+		if($compteur==0)
+			break;
+		$news = new News();
+                $news->index = $row['index'];
+                $news->titre = $row['titre'];
+                $news->date = $row['date'];
+                $news->pathImage = $row['pathImage'];
+                $news->resume = $row['resume'];
+                $news->contenu = $row['contenu'];
+		$tabnews[] = $news;
+		$compteur = $compteur-1;
         }
+	return $tabnews;
         
-    }
-    
-    public static function get1News($index)
-    {
-        $server = 'mysql:host=hina;dbname=dbnasayarh';
-        $user = 'nasayarh';
-        $mdp = 'patate';
-        
-        $news = new News();
-        $connexion = new Connection($server, $user, $mdp, null);
-        $requete = 'SELECT titre FROM News WHERE index='.'$index';
-        $connexion->executeQuery($requete);
-        $news->titre = $connexion->getResults();
-        
-        $requete = 'SELECT date FROM News WHERE index='.'$index';
-        $connexion->executeQuery($requete);
-        $news->date = $connexion->getResults();
-        
-        $requete = 'SELECT pathImage FROM News WHERE index='.'$index';
-        $connexion->executeQuery($requete);
-        $news->pathImage = $connexion->getResults();
-        
-        $requete = 'SELECT resume FROM News WHERE index='.'$index';
-        $connexion->executeQuery($requete);
-        $news->resume = $connexion->getResults();
-        
-        $requete = 'SELECT contenu FROM News WHERE index='.'$index';
-        $connexion->executeQuery($requete);
-        $news->contenu = $connexion->getResults();
-        
-        return news;
     }
 }
 
