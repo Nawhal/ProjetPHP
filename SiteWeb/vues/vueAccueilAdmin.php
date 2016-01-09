@@ -9,7 +9,7 @@
     <body>
         <?php
         require_once 'menu.php';
-        require_once 'aside.php';
+        require_once 'asideAdmin.php';
         ?>
         <div class="presentation">
             <div class="centrer">

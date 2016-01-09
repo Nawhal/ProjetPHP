@@ -18,7 +18,7 @@ class FrontController {
         global $rootDirectory;
         global $vues;
         $listeActionVisiteur = array('sansAction','seConnecter', 'voirNews', 'voirPersonnages', 'ajouterCommentaire');
-        $listeActionAdmin = array('addNews', 'modifNews', 'suppNews', 'addImage', 'addPerso', 'modifPerso', 'suppPerso');
+        $listeActionAdmin = array('addNews', 'modifNews', 'suppNews', 'suppCommentaire', 'addImage', 'addPerso', 'modifPerso', 'suppPerso');
 
         session_start();
 

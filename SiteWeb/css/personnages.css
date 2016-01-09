@@ -24,3 +24,10 @@ b
 {
     font-family: Style;
 }
+
+td > .bouton_Admin
+{
+    position: relative;
+    float: right;
+    padding-left: 10px;
+}

@@ -8,12 +8,19 @@
     <body>
         <?php
             require_once 'menu.php';
-            require_once 'aside.php';
+            require_once 'asideAdmin.php';
         ?>
         
         <h2 class="centrer">
             Personnages
         </h2>
+        
+        <div class="element_Admin">
+            <a href="./?action=addPerso" class="bouton bouton_Admin">
+                <img src="<?php global $serverInfo; echo $serverInfo.'/images/add.png'?>">
+                Ajouter un personnage
+            </a>
+        </div>
         
         <?php
             $tabperso = PersonnageGateway::getAllPerso();
@@ -26,6 +33,12 @@
                         <img src="<?php global $serverInfo; echo $serverInfo.$perso->imagePath; ?>" alt="<?php echo $perso->nom; ?>">
                     </td>
                     <td>
+                        <a href="./?action=suppPerso<?php echo 'perso' . $perso->index ?>" class="bouton bouton_Admin">
+                            <img src="<?php global $serverInfo; echo $serverInfo.'/images/delete.png'?>">
+                        </a>
+                        <a href="./?action=modifPerso<?php echo 'perso' . $perso->index ?>" class="bouton bouton_Admin">
+                            <img src="<?php global $serverInfo; echo $serverInfo.'/images/edit.png'?>">
+                        </a>
                         <a id="<?php echo $perso->nom; ?>">
                             <b> Nom :</b> <?php echo $perso->nom; ?>
                         </a>
