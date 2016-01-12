@@ -1,0 +1,41 @@
+.presentation
+{
+    padding-top: 130px;
+    padding-bottom: 120px;
+    color: #fff;
+    background-image: url('http://localhost/~ceparis/SiteWeb/images/tardis.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333;
+    width: 100%;
+}
+
+.presentation_sous-titre
+{
+    font-family: 'Style', 'Open Sans', sans-serif;;
+    font-weight: 700;
+}
+
+.articles
+{
+    background-color: #2b416a;
+    display: table;
+    padding: 40px 60px;
+}
+
+.articles_element
+{
+    display: table-cell;
+    width: 33.333333%;
+}
+
+.articles_article
+{
+    position: relative;
+    color: #333;
+    padding: 15px 20px;
+    background: #eee;
+    border-radius: 5px;
+    margin: 15px;
+    text-align: justify;
+}
